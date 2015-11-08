@@ -26,6 +26,10 @@
 		<module>docker</module>
 	</modules>
 
+	<properties>
+		<db.name>mysql</db.name>
+	</properties>
+
 	<build>
 		<pluginManagement>
 			<plugins>

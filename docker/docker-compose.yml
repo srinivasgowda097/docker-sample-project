@@ -9,6 +9,6 @@ web:
 redis:
   image: redis
 db:
-  image: devops-test-mysqldb
+  image: devops-test-${db.name}-db
   environment:
    - MYSQL_ROOT_PASSWORD=test123
