@@ -31,7 +31,7 @@
 				<artifactId>docker-maven-plugin</artifactId>
 				<configuration>
 					<imageName>devops-test-webapp</imageName>
-					<dockerDirectory>${basedir}/docker</dockerDirectory>
+					<dockerDirectory>${basedir}/docker/${db.name}</dockerDirectory>
 				</configuration>				
 				<executions>
 					<execution>
