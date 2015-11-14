@@ -1,7 +1,7 @@
 
 # docker-sample-project
 
-This project is an example Docker project which uses Maven, docker, Python, MySQL and Redis. This project uses Docker Compose to manage (stop and start) three containers used by a simple web application.
+This project is an example Docker project which uses Maven, docker, Python, database server (Mysql or Oracle) and Redis. This project uses Docker Compose to manage (stop and start) three containers used by a simple web application.
 
 Project runs a web, database and redis instance where each one is running on a separate Docker container.
 
@@ -12,7 +12,12 @@ This was tested using Docker Toolbox 1.9.0 in a Windows 8.1 Pro environment.
 To build, execute command:
 
 ```
-mvn clean install
+mvn -Pdb.name=[oracle | mysql ] clean install
+```
+
+Example:
+```
+mvn -Pdb.name=oracle clean install
 ```
 
 # Run Docker Containers
