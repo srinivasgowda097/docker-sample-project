@@ -20,10 +20,10 @@ def helloDb():
 	db.commit()
 	cursor.execute("SELECT count FROM hits")
 	row = cursor.fetchone()
-	return 'Hello World Oracl DB! I have been seen {} times. Database version : {} '.format(row[0], data);
+	return 'Hello World Oracle DB! I have been seen {} times. Database version : {} '.format(row[0], data);
 	cursor.close
 	db.close()
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", debug=True)
+    app.run(host="0.0.0.0", debug=False)
 	
