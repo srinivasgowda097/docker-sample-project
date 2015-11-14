@@ -6,6 +6,7 @@ RUN apt-get install alien dpkg-dev debhelper build-essential libaio1 --assume-ye
 
 # Install oracle
 # Reference: https://help.ubuntu.com/community/Oracle%20Instant%20Client
+# Download RPM files from http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html
 ADD oracle-instantclient12.1-basic-12.1.0.2.0-1.x86_64.rpm .
 ADD oracle-instantclient12.1-sqlplus-12.1.0.2.0-1.x86_64.rpm .
 ADD oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.rpm .

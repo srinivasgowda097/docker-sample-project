@@ -34,7 +34,7 @@
 				<groupId>com.spotify</groupId>
 				<artifactId>docker-maven-plugin</artifactId>
 				<configuration>
-					<imageName>devops-test-db</imageName>
+					<imageName>${project.artifactId}</imageName>
 					<dockerDirectory>${basedir}/docker/${db.name}</dockerDirectory>
 				</configuration>				
 				<executions>
