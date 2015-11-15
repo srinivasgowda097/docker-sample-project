@@ -26,7 +26,7 @@ docker run -it --rm --name my-python-app -v "/my/local/path/":/code sbanal/pytho
 ##### Create file app.py in your directory with contents below  #####
 
 ~~~~~~
-# from flask import Flask
+from flask import Flask
 import cx_Oracle
 
 app = Flask(__name__)
