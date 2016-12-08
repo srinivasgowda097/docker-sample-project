@@ -2,7 +2,7 @@
 web:
   image: devops-test-webapp
   ports:
-   - "5500:5000"
+   - "55000:5000"
   links:
    - redis
    - db
